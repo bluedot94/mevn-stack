@@ -21,7 +21,7 @@ app.set('view engine', 'html');
 app.use('/books', express.static(path.join(__dirname, 'dist')));
 app.use('/book', book);
 
-// catch 404 and forward to error handler
+// catch 404 and forward to error handler1
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
